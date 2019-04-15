@@ -30,9 +30,9 @@
 	</style>
 </head>
 <body>
-	<script>
+	<!-- <script>
 		alert("I'm JavaScript!");
-	</script>
+	</script> -->
 	<div class="container">
 		<div id="w"></div>
 		<!-- <div id="c"></div> -->
@@ -40,7 +40,7 @@
 
 <script>
 	// Массив со словами
-	var words = ["cat", "dog", "lemur"];
+	var words = ["cat", "dog", "lemur", "good"];
 	// Выбираем случайное слово из массива words
 	var word = words[Math.floor(Math.random() * words.length)];
 	// Создаем итоговый массив
@@ -57,7 +57,7 @@
   	if (count === 0) {
   		// alert("You lose");
   		elemW.innerHTML = "You Lose!" 
-  		elemW.innerHTML += "<p> The answer was:</p>";
+  		elemW.innerHTML += "<p>The answer was:</p>";
   		elemW.innerHTML += '<p class="answer">' + word + '</p>';
   		break;
   	} 	
@@ -75,8 +75,8 @@
   				if (word[j] == guess) {
   					answerArray[j] = guess;
   					remainingLetters--;
-  					elemW.innerHTML = "You Win!" 
-					  elemW.innerHTML += "<p> The answer is:</p>";
+  					elemW.innerHTML = "You Win!";
+					  elemW.innerHTML += "<p>The answer is:</p>";
 					  elemW.innerHTML += '<p class="answer">' + word + '</p>';
   				}
   			}
@@ -84,7 +84,6 @@
   		count--;
   		console.log(count);
   	}
-  
   // elemW.innerHTML = answerArray.join(" ");
   console.log(word);
   console.log(remainingLetters);
