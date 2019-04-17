@@ -16,3 +16,5 @@ console.log(myNumberType);
 
 var myStr = "My " + "string";
 console.log("my " + );
+
+// DELETE ME!!!
