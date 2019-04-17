@@ -15,4 +15,4 @@ var myNumberType = typeof (1+"place");
 console.log(myNumberType);
 
 var myStr = "My " + "string";
-console.log("my " + 1);
+console.log("my " + );
