@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+	</head>
+	<body>
+		<script>
+			function afterReveal() {
+			  var currentCount = 1,
+			    doStuff = function() {
+			      $(".queue[data-id=" + currentCount + "]").animate({
+			        opacity: 1
+			      }, 50).promise().done(function() {
+			        currentCount++, doStuff(), 45 == currentCount && ($(".first-q .step2-gif").hide(), $(".first-q .step3-gif").show())
+			      })
+			    };
+			  ! function loopingFunction() {
+			    doStuff()
+			  }()
+			}
+			afterReveal();
+		</script>
+		
+	</body>
+</html>
